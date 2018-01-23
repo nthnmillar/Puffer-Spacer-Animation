@@ -1,0 +1,15 @@
+#container {
+  display: flex;
+  justify-content: center; }
+
+.puff {
+  height: 400px;
+  width: 400px;
+  background-image: url(img/Puff-Sprite_L.png); }
+
+.spacer {
+  height: 400px;
+  width: 400px;
+  background-image: url(img/Spacer-Sprite_L.png); }
+
+/*# sourceMappingURL=style.css.map */

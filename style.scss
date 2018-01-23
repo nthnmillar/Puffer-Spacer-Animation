@@ -1,0 +1,21 @@
+@import "helpers/mixins";
+
+$puff-img: url(img/Puff-Sprite_L.png);
+$spacer-img: url(img/Spacer-Sprite_L.png);
+$ani-size: 400px;
+
+#container{
+	display:flex;
+	justify-content:center;
+}
+
+.puff{
+ @include ani-dim($ani-size);
+ background-image:$puff-img;
+}
+
+.spacer{
+	@include ani-dim($ani-size);
+	background-image: $spacer-img;
+
+}
