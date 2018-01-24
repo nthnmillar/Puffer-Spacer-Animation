@@ -1,6 +1,30 @@
 
+@font-face{
+            font-family:HelveticaNeue-Light;
+            src:url(Fonts/HelveticaNeue-Light.otf);
+          }
 
 @mixin ani-dim($size){
 	height:$size;
 	width:$size;
+}
+
+@mixin button-dim($height, $width){
+  text-align:center;
+  font-weight: bold;
+  margin-top:25px;
+  font-family: Arial;
+  height:$height;
+  width:$width;
+  border-radius:3px;
+  background:#08a756;
+  color:#fff;
+  font-size:18px;
+  padding:12px 5px 12px 5px;
+  cursor:pointer;
+  display:inline-block;
+  transition: background 0.3s ease;
+  &:hover{
+     background:#008540;
+  }
 }

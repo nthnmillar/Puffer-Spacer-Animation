@@ -1,15 +1,60 @@
+@font-face {
+  font-family: HelveticaNeue-Light;
+  src: url(Fonts/HelveticaNeue-Light.otf); }
 #container {
+  margin-top: 100px;
   display: flex;
   justify-content: center; }
 
-.puff {
+.sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#puff {
   height: 400px;
   width: 400px;
   background-image: url(img/Puff-Sprite_L.png); }
 
-.spacer {
+#spacer {
   height: 400px;
   width: 400px;
   background-image: url(img/Spacer-Sprite_L.png); }
+
+#button-puff {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 25px;
+  font-family: Arial;
+  height: 20px;
+  width: 108px;
+  border-radius: 3px;
+  background: #08a756;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 5px 12px 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.3s ease; }
+  #button-puff:hover {
+    background: #008540; }
+
+#button-space {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 25px;
+  font-family: Arial;
+  height: 20px;
+  width: 108px;
+  border-radius: 3px;
+  background: #08a756;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 5px 12px 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.3s ease; }
+  #button-space:hover {
+    background: #008540; }
 
 /*# sourceMappingURL=style.css.map */
