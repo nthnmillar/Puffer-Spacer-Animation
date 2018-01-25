@@ -3,12 +3,31 @@
 $puff-img: url(img/Puff-Sprite_L.png);
 $spacer-img: url(img/Spacer-Sprite_L.png);
 $ani-size: 400px;
-$w-but:108px;
+$w-but:128px;
 $h-but:20px;
+$break-small:800px;
+$max-text:80%;
+
+h1{
+  @extend %text;
+  margin-top:50px;
+}
+
+h2{
+  @extend %text;
+  font-size:20px;
+  margin-top:30px;
+  margin-bottom:5px;
+}
+
+p{
+  @extend %text;
+  font-size:18px;
+}
 
 #container{
-	margin-top:100px;
 	display:flex;
+  flex-direction:row;
 	justify-content:center;
 //	background:#22be68;
 }
@@ -17,6 +36,16 @@ $h-but:20px;
 	display:flex;
 	flex-direction:column;
 	align-items: center;
+}
+
+.para-sec{
+  margin-top:0px;
+  width:200px;
+}
+
+#para-intro{
+  margin:auto;
+  width: 80%;
 }
 
 #puff{
@@ -35,4 +64,15 @@ $h-but:20px;
 
 #button-space{
 	@include button-dim($h-but, $w-but);
+}
+
+
+@media (max-width: $break-small){
+  #container{
+      flex-direction:column;
+  }
+  .para-sec{
+    width: $max-text;
+  }
+
 }

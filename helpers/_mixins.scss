@@ -12,7 +12,7 @@
 @mixin button-dim($height, $width){
   text-align:center;
   font-weight: bold;
-  margin-top:25px;
+  margin-top:37px;
   font-family: Arial;
   height:$height;
   width:$width;
@@ -27,4 +27,10 @@
   &:hover{
      background:#008540;
   }
+}
+
+%text{
+	color:#8f8f8f;
+	font-family:HelveticaNeue-Light;
+	text-align:center;
 }
